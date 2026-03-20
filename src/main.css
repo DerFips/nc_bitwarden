@@ -1,0 +1,13 @@
+/* nc_bitwarden App-Layout */
+#app-content,
+#app-content-wrapper {
+    position: relative !important;
+}
+#nc-bitwarden-app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}

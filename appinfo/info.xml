@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>nc_bitwarden</id>
+    <name>Bitwarden</name>
+    <summary>Native Bitwarden Vault Integration</summary>
+    <description><![CDATA[
+        Greife direkt aus Nextcloud auf deinen Bitwarden-Tresor zu.
+        Unterstuetzt bitwarden.com, bitwarden.eu und selbst gehostete Instanzen (Vaultwarden).
+        Alle Entschluesselungen finden client-seitig im Browser statt.
+        Das Master-Passwort verlaesst niemals den Browser.
+    ]]></description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Philipp Tannich</author>
+    <namespace>NcBitwarden</namespace>
+    <category>security</category>
+    <bugs>https://github.com/yourname/nc_bitwarden/issues</bugs>
+    <dependencies>
+        <php min-version="8.1"/>
+        <nextcloud min-version="31" max-version="33"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Bitwarden</name>
+            <route>nc_bitwarden.page.index</route>
+            <icon>app.svg</icon>
+            <order>10</order>
+        </navigation>
+    </navigations>
+    <settings>
+        <personal>OCA\NcBitwarden\Settings\Personal</personal>
+        <personal-section>OCA\NcBitwarden\Settings\PersonalSection</personal-section>
+    </settings>
+</info>

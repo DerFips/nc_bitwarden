@@ -1,0 +1,30 @@
+{
+  "name": "nc_bitwarden",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@nextcloud/axios": "^2.5.0",
+    "@nextcloud/router": "^3.0.0",
+    "@nextcloud/vue": "^9.0.0",
+    "@noble/hashes": "^1.7.1",
+    "vue": "^3.5.0",
+    "vue-material-design-icons": "^5.3.0"
+  },
+  "devDependencies": {
+    "@nextcloud/browserslist-config": "^3.1.2",
+    "@nextcloud/eslint-config": "^8.4.0",
+    "@nextcloud/vite-config": "^2.5.2",
+    "vite": "^7.1.10"
+  },
+  "browserslist": [
+    "extends @nextcloud/browserslist-config"
+  ],
+  "overrides": {
+    "fast-xml-parser": ">=5.5.7"
+  }
+}
